@@ -28,6 +28,10 @@ public abstract class BasicAccountFramework {
     public boolean getOverdraftStatus(){
         return OverdraftEnabled;
     }
+    public int getAccountDetails(){
+        return this.AccountNumber;
+    }
+
     public void setAccountHolder(String accountHolder) {
         AccountHolder = accountHolder;
     }
@@ -46,9 +50,7 @@ public abstract class BasicAccountFramework {
     public void setOverdraftEnabled(boolean overdraftEnabled){
         this.OverdraftEnabled = overdraftEnabled;
     }
-    public int getAccountDetails(){
-        return this.AccountNumber;
-    }
+
     public void depositMoney(int amount) {
         this.Balance += amount;
     }
