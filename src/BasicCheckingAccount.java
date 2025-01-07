@@ -5,7 +5,7 @@ public class BasicCheckingAccount extends BasicAccountFramework {
         super.setAccountHolderId(x.getIdNumber());
         super.setAccountCurrency(currency);
         x.addAccount(this);
-        this.setOverdraftEnabled(false);
+        this.setOverdraftEnabled(true);
     }
     public void setAccountNumber(int x){
         super.setAccountNumber(x);

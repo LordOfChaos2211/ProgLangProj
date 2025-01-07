@@ -3,7 +3,7 @@ public abstract class BasicAccountFramework {
     String AccountHolderAddress;
     int AccountHolderId;
     int AccountNumber;
-    int Balance = 0;
+    double Balance = 0;
     private String AccountCurrency;
     boolean OverdraftEnabled;
 
@@ -19,7 +19,7 @@ public abstract class BasicAccountFramework {
     public int getAccountNumber() {
         return AccountNumber;
     }
-    public int getBalance() {
+    public double getBalance() {
         return Balance;
     }
     public String getAccountCurrency() {
