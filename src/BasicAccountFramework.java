@@ -1,14 +1,18 @@
 public abstract class BasicAccountFramework {
-    String AccountHolder;
+    String AccountHolderName;
     String AccountHolderAddress;
     int AccountHolderId;
     int AccountNumber;
+    Person AccountHolder;
     double Balance = 0;
     private String AccountCurrency;
     boolean OverdraftEnabled;
 
-    public String getAccountHolder() {
+    public Person getAccountHolder(){
         return AccountHolder;
+    }
+    public String getAccountHolderName() {
+        return AccountHolderName;
     }
     public String getAccountHolderAddress() {
         return AccountHolderAddress;
@@ -32,8 +36,11 @@ public abstract class BasicAccountFramework {
         return this.AccountNumber;
     }
 
-    public void setAccountHolder(String accountHolder) {
-        AccountHolder = accountHolder;
+    public void setAccountHolder(Person x){
+        AccountHolder = x;
+    }
+    public void setAccountHolderName(String accountHolder) {
+        AccountHolderName = accountHolder;
     }
     public void setAccountHolderAddress(String accountHolderAddress) {
         AccountHolderAddress = accountHolderAddress;
